@@ -33,25 +33,33 @@ for (var i=0 ; i<musics.length ; i++) {
     var tag= `<div class="containermusic" id=${i}>
     <div class="pic">
         <img src = "${musics[i].img}">
+        <img id="play" src="images/play.png">
     </div>
     <div class="name">
         <h2>${musics[i].name}</h2>
     </div>
     <div class="album">${musics[i].album}</div>
-</div>
-
 </div>`
 $(".about").append(tag);
 }
 
 
-
+var isPlaying=false 
 
 $(".containermusic").click(function() {
-    id = this.id ;
-    console.log(musics[id].link)
-    audio = new Audio(musics[id].link);
-    audio.play();
-
-
+   var  id = this.id ;
+    if (isPlaying==false){
+    audio = new Audio(musics[id].path);
+    audio.play() ; isPlaying=true ; }
+else {
+    audio.pause();
+   isPlaying=false ;
+}
 })
+
+$(".containermusic").hover(function () {
+$("#play").css({display : "flex"})
+},function(){
+    $("#play").css({display : "none"})
+}
+);
