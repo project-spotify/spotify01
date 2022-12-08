@@ -1,0 +1,156 @@
+body{
+    font-family: Lucida sans;
+}
+
+.sections{
+    padding: 20px 0;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+header{
+    height: auto;
+    padding: 10px 0;
+    border-bottom: 1px #ffe4c4;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+}
+
+header i.icon{
+    position:absolute;
+    right: 30px;
+    top: 32px;
+    z-index: 10;
+}
+
+header .logo h2{
+    font-size: 35px;
+    color: #fff;
+     
+}
+
+header nav .nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+   
+}
+
+
+
+header nav .nav-list .counter{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+header nav .nav-list .list a{
+    display: block;
+    padding: 15px;
+    margin: 9px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color:#fff;
+}
+
+header nav .nav-list .list a:hover{
+    color: #7cb62f;
+}
+
+.sticky{
+    background-color: rgb(238, 138, 238);
+    color: #111;
+}
+
+.home{
+    height: 500px;
+    background-image: url('../images/img.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home .home-title{
+    color:#fff;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+.section{
+    margin-bottom: 600px;
+}
+
+h1{
+  font-size: 54px;
+  text-transform: uppercase;
+}
+
+ section .container{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gameboard {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.box{
+  height: 120px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: bisque;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+}
+
+.box:nth-child(3n){
+    border-right: none;
+}
+
+.box:nth-child(6) ~.box{
+    border-bottom: none;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: bisque;
+    color: gray;
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+.text{
+    margin-bottom: 400px;
+}
