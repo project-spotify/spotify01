@@ -1,5 +1,7 @@
 body{
-    font-family: Lucida sans;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 .sections{
@@ -17,7 +19,7 @@ body{
 
 
 header{
-    height: auto;
+    height: 60px;
     padding: 10px 0;
     border-bottom: 1px #ffe4c4;
     position: fixed;
@@ -40,10 +42,12 @@ header .logo h2{
 }
 
 header nav .nav-list{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 0px;
     list-style: none;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 0;
    
 }
 
@@ -57,21 +61,28 @@ header nav .nav-list .counter{
 }
 
 header nav .nav-list .list a{
-    display: block;
-    padding: 15px;
-    margin: 9px 0;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px 0px;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     color:#fff;
 }
 
 header nav .nav-list .list a:hover{
-    color: #7cb62f;
+    color: #a62a62;
+    text-transform: uppercase;
+    border:3px solid #111 ;
+    padding: 2px;
+    border-radius: 10px;
+    text-decoration: solid;
 }
 
 .sticky{
-    background-color: rgb(238, 138, 238);
+    background-color: rgb(137, 125, 137);
     color: #111;
+    opacity: 0.5;
+    text-decoration: overline;
 }
 
 .home{
@@ -153,4 +164,26 @@ button:hover{
 }
 .text{
     margin-bottom: 400px;
+}
+.containermusic{
+width: 20%;
+height: 20%;
+border: 4px solid gray;
+border-radius: 4px;
+padding: 7px;
+margin: 10px;
+}
+.pic img{
+width: 100%;
+height: 100%;
+margin: 0px;
+border-radius: 10px;
+padding: 10px;
+}
+.name h2 {
+    text-align: left;
+    text-transform: capitalize;
+    margin-top: 0px;
+    font-size: 16px;
+    
 }
